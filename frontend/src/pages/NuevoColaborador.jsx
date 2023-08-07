@@ -18,14 +18,14 @@ export const NuevoColaborador = () => {
     
   return (
     <>
-    <h1 className="text-3xl font-black">Añadir colaborador al proyecto {proyecto.nombre}</h1>
-    <div className="mt-10 flex justify-center">
+    <h1 className="text-3xl mx-4 font-black">Añadir colaborador al proyecto {proyecto.nombre}</h1>
+    <div className="mt-10 flex justify-center  ">
         <FormularioColaborador/>
     </div>
 
     {cargando ? <p className="text-center">Cargando...</p> : colaborador?._id && (
         <div className="flex justify-center mt-10">
-            <div className="bg-white rounded-lg shadow py-10 px-5 md:w-1/2 ">
+            <div className="bg-white rounded-lg shadow py-10 px-5 md:w-1/2 w-full mx-4">
                 <h2 className=" text-2xl font-bold text-center mb-10" >Resultado:</h2>
                 <div className="flex justify-between items-center">
                     <p>{colaborador.nombre}</p>
